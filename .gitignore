@@ -3,4 +3,4 @@
 .zcompdump
 .zshrc.local
 .zprofile.local
-
+.zsh_sessions
