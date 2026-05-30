@@ -12,6 +12,8 @@ setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 # Expire duplicate entries first when trimming history.
 setopt HIST_EXPIRE_DUPS_FIRST
+# Case insensitive tab completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
 # History prefix search with up/down arrow keys
 autoload -U up-line-or-beginning-search down-line-or-beginning-search
@@ -61,7 +63,8 @@ alias gc='git commit'
 alias ga='git add'
 alias gcam='git commit --all --message'
 alias gcm='git commit --message'
-alias gp="git push"
+alias gp='git push'
+alias gf='git fetch'
 
 # Vim/nvim 
 alias vi='nvim'
